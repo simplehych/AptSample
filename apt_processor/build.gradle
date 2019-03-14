@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.auto.service:auto-service:1.0-rc3'
+    implementation project(':apt_annotation')
+
+    implementation 'com.squareup:javapoet:1.10.0'
+
+}
